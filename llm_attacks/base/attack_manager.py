@@ -2116,10 +2116,10 @@ def get_goals_and_targets(params):
     test_targets = getattr(params, 'test_targets', [])
     offset = getattr(params, 'data_offset', 0)
     if params.train_data:
-        with open(params.prompt_template, "r") as f:
+        with open("/kaggle/working/Hackode_copy/data/prompt_templates.txt", "r") as f:
             prompt_templates = f.readlines()
         prompt_templates = [line.strip() for line in prompt_templates]
-        with open(params.instructions, "r") as f:
+        with open("/kaggle/working/Hackode_copy/data/insstructions.txt", "r") as f:
             instructions = f.readlines()
         instructions = [line.strip() for line in instructions]
 
