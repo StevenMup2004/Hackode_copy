@@ -29,6 +29,8 @@ def main(_):
     print(params)
     
     prompt_templates, instructions, queries, contexts, train_targets, train_succ_flag, train_fail_flag, test_goals, test_targets = get_goals_and_targets(params)
+    prompt_template = os.path.abspath("/kaggle/working/Hackode_copy/data/prompt_templates.txt")
+
 
 
     workers, test_workers = get_workers(params)
