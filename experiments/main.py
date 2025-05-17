@@ -13,8 +13,8 @@ from llm_attacks import get_goals_and_targets, get_workers
 import os
 
 _CONFIG = config_flags.DEFINE_config_file('config')
-
-# Function to import module at the runtime
+import sys
+sys.path.append("/kaggle/working/Hackode_copy")
 def dynamic_import(module):
     return importlib.import_module(module)
 
