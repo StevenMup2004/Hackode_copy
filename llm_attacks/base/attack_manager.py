@@ -2119,7 +2119,7 @@ def get_goals_and_targets(params):
         with open("/kaggle/working/Hackode_copy/data/prompt_templates.txt", "r") as f:
             prompt_templates = f.readlines()
         prompt_templates = [line.strip() for line in prompt_templates]
-        with open("/kaggle/working/Hackode_copy/data/insstructions.txt", "r") as f:
+        with open("/kaggle/working/Hackode_copy/data/instructions.txt", "r") as f:
             instructions = f.readlines()
         instructions = [line.strip() for line in instructions]
 
